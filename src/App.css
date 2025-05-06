@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+  height: 200px;
+  width:100%;
+  
+}
+.paper{
+  z-index: 1;
+  display: flex;
+  height: 100px;
+  width: 40%;
+  align-items: center;
+  margin-top: 200px;
+  position: absolute;
+}
+
+  .paper2{
+   z-index: 2;
+  display: grid;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items: center;
+  height: 40%;
+  width: 40%;
+  margin-top: 40%;
+  position: absolute;
+  
+  
+}
+
+#edit{
+  font-size: 25px;
+  outline: none;
+  margin-left: 10px;
+  color: rgb(103, 27, 173);
+}
+#delete{
+  font-size: 25px;
+  outline: none;
+  margin-left: 10px;
+  color: rgb(103, 27, 173);
+
+}
