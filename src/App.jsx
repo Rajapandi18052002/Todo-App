@@ -54,24 +54,36 @@ function App() {
 
   return (
     <>
-      <Box className="bg">
-        <Typography className="typo" variant="h2">
-          {" "}
+      <Box className="bg" sx={{ height: { md: "200px" } }}>
+        <Typography sx={{ fontSize: { xs: "20px", md: "80px" } }}>
           Todo-App{" "}
         </Typography>
         <Paper
           className="paper"
-          sx={{ marginX: "auto" }}
+          sx={{
+            marginX: "auto",
+            width: { md: "40%" },
+            marginTop: { md: "200px" },
+            height: { md: "100px" },
+          }}
           square={false}
           elevation={12}
         >
-          <Typography align="left" marginLeft="10px">
+          <Typography
+            align="left"
+            marginLeft="10px"
+            sx={{ fontSize: { xs: "10px", sm: "15px" } }}
+          >
             <b>Add Items:</b>
           </Typography>
 
           <TextField
             value={newItems}
-            sx={{ width: "70%", marginLeft: "10px" }}
+            sx={{
+              marginY: "auto",
+              width: { md: "70%" },
+              marginLeft: { md: "10px" },
+            }}
             onChange={(e) => {
               setNewItems(e.target.value);
             }}
@@ -84,7 +96,6 @@ function App() {
             sx={{ marginX: "10px" }}
             onClick={handleaddsaveitems}
             variant="contained"
-            size="large"
             color={isEdit ? "primary" : "success"}
           >
             {" "}
@@ -94,14 +105,18 @@ function App() {
 
         <Paper
           className="paper2"
-          sx={{ marginX: "auto" }}
+          sx={{
+            marginX: "auto",
+            width: { md: "40%" },
+            marginTop: { md: "50%" },
+          }}
           square={false}
           elevation={14}
         >
           {items.map((item) => {
             return (
               <Typography
-                sx={{ fontSize: "35px" }}
+                sx={{ fontSize: { sm: "10px", md: "35px" } }}
                 align="left"
                 marginLeft="10px"
               >
@@ -109,6 +124,7 @@ function App() {
                 {"."}
                 {item.label}
                 <FaEdit
+                  sx={{ fontSize: { sm: "15px", md: "25px" } }}
                   id="edit"
                   role="button"
                   tabIndex={0}
@@ -118,6 +134,7 @@ function App() {
                 />
 
                 <RiDeleteBin5Line
+                  sx={{ fontSize: { sm: "15px", md: "25px" } }}
                   id="delete"
                   role="button"
                   tabIndex={0}

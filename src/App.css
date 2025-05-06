@@ -9,17 +9,18 @@
   justify-content: center;
   align-items: center;
   background-color: blueviolet;
-  height: 200px;
+  height: 100px;
   width:100%;
   
 }
 .paper{
+  justify-content: space-around;
   z-index: 1;
   display: flex;
-  height: 100px;
-  width: 40%;
+  height: 70px;
+  width: 90%;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 100px;
   position: absolute;
 }
 
@@ -29,22 +30,20 @@
   flex-wrap: wrap;
   justify-content:space-around;
   align-items: center;
-  height: 40%;
-  width: 40%;
-  margin-top: 40%;
+  height:50%;
+  margin-top:120%;
   position: absolute;
+  width: 90%;
   
   
 }
 
 #edit{
-  font-size: 25px;
   outline: none;
   margin-left: 10px;
   color: rgb(103, 27, 173);
 }
 #delete{
-  font-size: 25px;
   outline: none;
   margin-left: 10px;
   color: rgb(103, 27, 173);
